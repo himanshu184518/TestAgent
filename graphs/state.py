@@ -1,6 +1,5 @@
 from typing import TypedDict
 
-
 class TestState(TypedDict, total=False):
 
     testcase: dict
@@ -9,8 +8,14 @@ class TestState(TypedDict, total=False):
 
     spec_path: str
 
+    plan_path: str
+
+    test_path: str
+
+    execution_result: str
+
     status: str
 
-    error_message: str
-
     validation_result: dict
+
+    error_message: str

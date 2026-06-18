@@ -1,0 +1,8 @@
+from utils.excel_reader import load_testcases
+
+testcases = load_testcases(
+    "data/testcases.xlsx"
+)
+
+for tc in testcases:
+    print(tc)
